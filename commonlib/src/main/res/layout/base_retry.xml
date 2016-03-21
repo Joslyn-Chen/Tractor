@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/errorStateRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <LinearLayout
+      android:id="@+id/retry_null"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:gravity="center"
+      android:orientation="vertical"
+      >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/retry_to_null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="加载失败，点击重新加载"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/retry_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="您目前尚未登录,"
+          android:textColor="@color/black"
+          android:textSize="14sp"
+          />
+
+      <TextView
+          android:id="@+id/retry_to_login"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="立即注册/登录"
+          android:textColor="@color/black"
+          android:textSize="14sp"
+          />
+    </LinearLayout>
+  </LinearLayout>
+</RelativeLayout>
